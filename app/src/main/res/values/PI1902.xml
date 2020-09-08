@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PI1902">
+        <item>Башмакова Анфиса Владимировна</item>
+        <item>Балыкова Елена Богдановна</item>
+        <item>Гибазова Жанна Тимуровна</item>
+        <item>Дудко Рада Платоновна</item>
+        <item>Иванова Мария Анатольевна</item>
+        <item>Карачёв Иван Серафимович</item>
+        <item>Синеоков Фадей Моисеевич</item>
+        <item>Тупицына Юлия Венедиктовна</item>
+        <item>Щепетинников Лука Олегович</item>
+        <item>Ювелева Юлия Феодосьевна</item>
+    </string-array>
+</resources>

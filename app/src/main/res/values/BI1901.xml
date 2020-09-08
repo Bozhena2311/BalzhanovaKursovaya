@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BI1901">
+    <item>Бабинов Лука Савелиевич</item>
+    <item>Кидина Василиса Юлиевна</item>
+    <item>Кувардина Татьяна Николаевна</item>
+    <item>Нырцева Ева Кузьмевна</item>
+    <item>Ожегова Нона Юлиевна</item>
+    <item>Потапова Марина Мироновна</item>
+    <item>Рябков Эмиль Андронович</item>
+    <item>Стукалов Захар Давидович</item>
+    <item>Тэн Эрнст Никонович</item>
+    <item>Янишин Павел Никифорович</item>
+    </string-array>
+</resources>

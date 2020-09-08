@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:clipToPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:subtitleTextColor="#FFFFFF"
+                app:titleTextColor="#f8f8f8f8" />
+
+
+            <TableRow
+                android:id="@+id/Disc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffffff">
+
+                <TextView
+                    android:id="@+id/tvDisc"
+                    android:layout_width="409dp"
+                    android:layout_height="match_parent"
+                    android:layout_span="4"
+                    android:text="Дисциплина"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/NameDisc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffffff">
+
+                <TextView
+                    android:id="@+id/tvNDisc"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:layout_span="4"
+                    android:text="Название дисциплины"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvGroup"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:layout_span="4"
+                    android:text="Группа"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/NameGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNGroup"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:layout_span="4"
+                    android:text="Группа"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/NomerST"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+                <TextView
+                    android:id="@+id/tvTipSdachi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="№"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/otReg"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Отметка о регистрации"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/fioST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="ФИО студента"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/DateRegistr"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Дата регистрации"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="1"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#000" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/Stud2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:freezesText="false"
+                    android:text="2"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textIsSelectable="false"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:freezesText="false"
+                    android:text="3"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textIsSelectable="false"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:freezesText="false"
+                    android:text="4"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textIsSelectable="false"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="5"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="6"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="7"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="8"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Бальжанова Божена Маратовна"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="9"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Stud10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvNST10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_span="2"
+                    android:text="10"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvNameST10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Reg10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border2">
+
+
+                <CheckBox
+                    android:id="@+id/ckReg10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Зарегистрирована"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/DateReg10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дата"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tvDateReg10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/BTNS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:id="@+id/btnScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:onClick="onClick"
+                    android:text="Сканировать qr-code" />
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</TableLayout>
